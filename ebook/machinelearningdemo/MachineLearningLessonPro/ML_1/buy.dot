@@ -1,0 +1,16 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+0 [label="age <= 1.5\nentropy = 0.946\nsamples = 11\nvalue = [4, 7]\nclass = yes", fillcolor="#399de56d"] ;
+1 [label="income <= 2.5\nentropy = 0.811\nsamples = 4\nvalue = [3, 1]\nclass = no", fillcolor="#e58139aa"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="entropy = 1.0\nsamples = 2\nvalue = [1, 1]\nclass = no", fillcolor="#e5813900"] ;
+1 -> 2 ;
+3 [label="entropy = 0.0\nsamples = 2\nvalue = [2, 0]\nclass = no", fillcolor="#e58139ff"] ;
+1 -> 3 ;
+4 [label="credit_rating <= 0.5\nentropy = 0.592\nsamples = 7\nvalue = [1, 6]\nclass = yes", fillcolor="#399de5d4"] ;
+0 -> 4 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+5 [label="entropy = 0.918\nsamples = 3\nvalue = [1, 2]\nclass = yes", fillcolor="#399de57f"] ;
+4 -> 5 ;
+6 [label="entropy = 0.0\nsamples = 4\nvalue = [0, 4]\nclass = yes", fillcolor="#399de5ff"] ;
+4 -> 6 ;
+}

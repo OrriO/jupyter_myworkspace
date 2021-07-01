@@ -1,0 +1,805 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>变量OP | 深度学习课程定位、目标</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-katex/katex.min.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../day01/section6.html" />
+    
+    
+    <link rel="prev" href="../day01/section4.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="2.5"
+        data-chapter-title="变量OP"
+        data-filepath="day01/section5.md"
+        data-basepath=".."
+        data-revision="Sun May 20 2018 14:15:08 GMT+0800 (CST)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        深度学习与图像识别课程
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="DeepLearning/index.html">
+            
+                
+                    <a href="../DeepLearning/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        深度学习介绍
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="DeepLearning/section1.html">
+            
+                
+                    <a href="../DeepLearning/section1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        深度学习与机器学习的区别
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="DeepLearning/section2.html">
+            
+                
+                    <a href="../DeepLearning/section2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        深度学习的应用场景
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="DeepLearning/section3.html">
+            
+                
+                    <a href="../DeepLearning/section3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        深度学习框架介绍
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="day01/index.html">
+            
+                
+                    <a href="../day01/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        TensorFlow框架介绍
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="day01/section1.html">
+            
+                
+                    <a href="../day01/section1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        TF数据流图
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="day01/section2.html">
+            
+                
+                    <a href="../day01/section2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        图与TensorBoard
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="day01/section3.html">
+            
+                
+                    <a href="../day01/section3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        会话
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="day01/section4.html">
+            
+                
+                    <a href="../day01/section4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        张量
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.5" data-path="day01/section5.html">
+            
+                
+                    <a href="../day01/section5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        变量OP
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="day01/section6.html">
+            
+                
+                    <a href="../day01/section6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        高级API
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="day01/section7.html">
+            
+                
+                    <a href="../day01/section7.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.</b>
+                        
+                        案例：实现线性回归
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="day01/section8.html">
+            
+                
+                    <a href="../day01/section8.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.8.</b>
+                        
+                        总结
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="day01/section9.html">
+            
+                
+                    <a href="../day01/section9.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.9.</b>
+                        
+                        每日作业
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="day02/index.html">
+            
+                
+                    <a href="../day02/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        数据读取、神经网络
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="day02/section1.html">
+            
+                
+                    <a href="../day02/section1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        文件读取流程
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="day02/section2.html">
+            
+                
+                    <a href="../day02/section2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        图片数据
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="day02/section3.html">
+            
+                
+                    <a href="../day02/section3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        二进制数据
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="day02/section4.html">
+            
+                
+                    <a href="../day02/section4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        TFRecords
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="day02/section5.html">
+            
+                
+                    <a href="../day02/section5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.</b>
+                        
+                        神经网络基础
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="day02/section6.html">
+            
+                
+                    <a href="../day02/section6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.</b>
+                        
+                        神经网络原理
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="day02/section7.html">
+            
+                
+                    <a href="../day02/section7.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.7.</b>
+                        
+                        案例：Mnist手写数字识别
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" data-path="day02/section8.html">
+            
+                
+                    <a href="../day02/section8.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.8.</b>
+                        
+                        线性神经网络局限性
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9" data-path="day02/section9.html">
+            
+                
+                    <a href="../day02/section9.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.9.</b>
+                        
+                        总结
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.10" data-path="day02/section10.html">
+            
+                
+                    <a href="../day02/section10.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.10.</b>
+                        
+                        每日作业
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="day03/index.html">
+            
+                
+                    <a href="../day03/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        卷积神经网络
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="day03/section1.html">
+            
+                
+                    <a href="../day03/section1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        卷积神经网络简介
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="day03/section2.html">
+            
+                
+                    <a href="../day03/section2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        卷积神经网络原理
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="day03/section3.html">
+            
+                
+                    <a href="../day03/section3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        案例：CNNMnist手写数字识别
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="day03/section4.html">
+            
+                
+                    <a href="../day03/section4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        网络结构与优化
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="day03/section5.html">
+            
+                
+                    <a href="../day03/section5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                        实战：验证码图片识别
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="day03/section6.html">
+            
+                
+                    <a href="../day03/section6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.6.</b>
+                        
+                        总结
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="day03/section7.html">
+            
+                
+                    <a href="../day03/section7.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.7.</b>
+                        
+                        每日作业
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >深度学习课程定位、目标</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="&#x53D8;&#x91CF;op">&#x53D8;&#x91CF;OP</h1>
+<ul>
+<li>&#x76EE;&#x6807;<ul>
+<li>&#x8BF4;&#x660E;&#x53D8;&#x91CF;op&#x7684;&#x7279;&#x6B8A;&#x4F5C;&#x7528;</li>
+<li>&#x8BF4;&#x660E;&#x53D8;&#x91CF;op&#x7684;trainable&#x53C2;&#x6570;&#x7684;&#x4F5C;&#x7528;</li>
+<li>&#x5E94;&#x7528;global_variables_initializer&#x5B9E;&#x73B0;&#x53D8;&#x91CF;op&#x7684;&#x521D;&#x59CB;&#x5316;</li>
+</ul>
+</li>
+<li>&#x5E94;&#x7528;<ul>
+<li>&#x65E0;</li>
+</ul>
+</li>
+</ul>
+<h2 id="1&#x3001;&#x53D8;&#x91CF;">1&#x3001;&#x53D8;&#x91CF;</h2>
+<p>TensorFlow&#x53D8;&#x91CF;&#x662F;&#x8868;&#x793A;&#x7A0B;&#x5E8F;&#x5904;&#x7406;&#x7684;&#x5171;&#x4EAB;&#x6301;&#x4E45;&#x72B6;&#x6001;&#x7684;&#x6700;&#x4F73;&#x65B9;&#x6CD5;&#x3002;&#x53D8;&#x91CF;&#x901A;&#x8FC7; tf.Variable OP&#x7C7B;&#x4EE5;&#x53CA;tf.get_variable()&#x7C7B;&#x8FDB;&#x884C;&#x64CD;&#x4F5C;&#x3002;&#x53D8;&#x91CF;&#x7684;&#x7279;&#x70B9;</p>
+<ul>
+<li><strong>&#x5B58;&#x50A8;&#x6301;&#x4E45;&#x5316;</strong></li>
+<li><strong>&#x53EF;&#x4FEE;&#x6539;&#x503C;</strong></li>
+<li><strong>&#x53EF;&#x6307;&#x5B9A;&#x88AB;&#x8BAD;&#x7EC3;</strong></li>
+</ul>
+<h3 id="11&#x521B;&#x5EFA;&#x53D8;&#x91CF;">1.1&#x521B;&#x5EFA;&#x53D8;&#x91CF;</h3>
+<ul>
+<li>tf.Variable(<strong>initial_value=None,trainable=True,collections=None</strong>,name=None)<ul>
+<li>initial_value:&#x521D;&#x59CB;&#x5316;&#x7684;&#x503C;</li>
+<li>trainable:&#x662F;&#x5426;&#x88AB;&#x8BAD;&#x7EC3;</li>
+<li>collections&#xFF1A;&#x65B0;&#x53D8;&#x91CF;&#x5C06;&#x6DFB;&#x52A0;&#x5230;&#x5217;&#x51FA;&#x7684;&#x56FE;&#x7684;&#x96C6;&#x5408;&#x4E2D;collections&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;[GraphKeys.GLOBAL_VARIABLES]&#xFF0C;&#x5982;&#x679C;trainable&#x662F;True&#x53D8;&#x91CF;&#x4E5F;&#x88AB;&#x6DFB;&#x52A0;&#x5230;&#x56FE;&#x5F62;&#x96C6;&#x5408; GraphKeys.TRAINABLE_VARIABLES </li>
+</ul>
+</li>
+</ul>
+<pre><code class="lang-python">var = tf.Variable(tf.random_normal([<span class="hljs-number">2</span>, <span class="hljs-number">2</span>], mean=<span class="hljs-number">0.0</span>, stddev=<span class="hljs-number">1.0</span>), name=<span class="hljs-string">&quot;var&quot;</span>, trainable=<span class="hljs-keyword">True</span>)
+
+<span class="hljs-keyword">with</span> tf.Session() <span class="hljs-keyword">as</span> sess:
+    sess.run(var)
+</code></pre>
+<ul>
+<li>&#x53D8;&#x91CF;&#x9700;&#x8981;&#x663E;&#x793A;&#x521D;&#x59CB;&#x5316;&#xFF0C;&#x624D;&#x80FD;&#x8FD0;&#x884C;&#x503C;</li>
+</ul>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x521D;&#x59CB;&#x5316;&#x53D8;&#x91CF;&#x7684;OP</span>
+init_op = tf.global_variables_initializer()
+
+<span class="hljs-keyword">with</span> tf.Session() <span class="hljs-keyword">as</span> sess:
+    <span class="hljs-comment"># &#x8FD0;&#x884C;&#x521D;&#x59CB;&#x5316;&#x53D8;&#x91CF;&#x7684;OP</span>
+    sess.run(init_op)
+</code></pre>
+<h3 id="12-&#x53D8;&#x91CF;op&#x7684;&#x65B9;&#x6CD5;">1.2 &#x53D8;&#x91CF;OP&#x7684;&#x65B9;&#x6CD5;</h3>
+<ul>
+<li>new_var = assign(value)<ul>
+<li>&#x7ED9;&#x53D8;&#x91CF;&#x8D4B;&#x503C;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x503C;</li>
+</ul>
+</li>
+<li>new_var = assign_add(delta)</li>
+</ul>
+<pre><code class="lang-python">var = tf.Variable(tf.random_normal([<span class="hljs-number">2</span>, <span class="hljs-number">2</span>], mean=<span class="hljs-number">0.0</span>, stddev=<span class="hljs-number">1.0</span>), name=<span class="hljs-string">&quot;var&quot;</span>, trainable=<span class="hljs-keyword">True</span>)
+var1 = var.assign([[<span class="hljs-number">2</span>, <span class="hljs-number">3</span>], [<span class="hljs-number">4</span>, <span class="hljs-number">5</span>]])
+init_op = tf.global_variables_initializer()
+va = var.assign_add([[<span class="hljs-number">1</span>, <span class="hljs-number">3</span>], [<span class="hljs-number">4</span>, <span class="hljs-number">5</span>]])
+<span class="hljs-keyword">with</span> tf.Session() <span class="hljs-keyword">as</span> sess:
+    <span class="hljs-comment"># &#x8FD0;&#x884C;&#x521D;&#x59CB;&#x5316;op</span>
+    sess.run(init_op)
+    print(sess.run(va))
+    print(sess.run(var))
+</code></pre>
+<p>&#x5173;&#x4E8E;&#x53D8;&#x91CF;&#x7684;&#x88AB;&#x8BAD;&#x7EC3;&#xFF0C;&#x6211;&#x4EEC;&#x5728;&#x540E;&#x9762;&#x7684;&#x7EBF;&#x6027;&#x56DE;&#x5F52;&#x6848;&#x4F8B;&#x5F53;&#x4E2D;&#x4ECB;&#x7ECD;</p>
+<h2 id="2&#x3001;&#x547D;&#x540D;&#x7A7A;&#x95F4;&#x4E0E;&#x5171;&#x4EAB;&#x53D8;&#x91CF;">2&#x3001;&#x547D;&#x540D;&#x7A7A;&#x95F4;&#x4E0E;&#x5171;&#x4EAB;&#x53D8;&#x91CF;</h2>
+<p><strong>&#x5171;&#x4EAB;&#x53D8;&#x91CF;&#x7684;&#x4E3B;&#x8981;&#x7528;&#x9014;&#x5728;&#x4E00;&#x4E9B;&#x7F51;&#x7EDC;&#x5F53;&#x4E2D;&#x7684;&#x53C2;&#x6570;&#x5171;&#x4EAB;</strong>&#xFF0C; &#x7531;&#x4E8E;&#x5728;TensorFlow&#x5F53;&#x4E2D;&#xFF0C;&#x53EA;&#x8981;&#x6211;&#x4EEC;&#x5B9A;&#x4E49;&#x7684;OP,name&#x53C2;&#x6570;&#x6307;&#x5B9A;&#x4E00;&#x6837;&#xFF0C;&#x5176;&#x5B9E;&#x5E76;&#x4E0D;&#x662F;&#x540C;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#x3002;&#x5982;&#x679C;&#x60F3;&#x8981;&#x8FBE;&#x5230;&#x91CD;&#x590D;&#x5229;&#x7528;&#x53D8;&#x91CF;&#x7684;&#x6548;&#x679C;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x8981;&#x4F7F;&#x7528;<code>tf.variable_scope()</code>&#x7ED3;&#x5408;<code>tf.get_variable()</code>&#x4E00;&#x8D77;&#x4F7F;&#x7528;</p>
+<h3 id="21-&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x76F8;&#x540C;&#x540D;&#x5B57;&#x7684;&#x53D8;&#x91CF;">2.1 &#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x76F8;&#x540C;&#x540D;&#x5B57;&#x7684;&#x53D8;&#x91CF;</h3>
+<pre><code class="lang-python">var = tf.Variable(name=<span class="hljs-string">&apos;var&apos;</span>, initial_value=[<span class="hljs-number">4</span>], dtype=tf.float32)
+var_double = tf.Variable(name=<span class="hljs-string">&apos;var&apos;</span>, initial_value=[<span class="hljs-number">4</span>], dtype=tf.float32)
+
+&lt;tf.Variable <span class="hljs-string">&apos;var:0&apos;</span> shape=() dtype=float32_ref&gt;
+&lt;tf.Variable <span class="hljs-string">&apos;var_1:0&apos;</span> shape=() dtype=float32_ref&gt;
+</code></pre>
+<h3 id="22-&#x4F7F;&#x7528;tfvariablescope&#x4FEE;&#x6539;op&#x547D;&#x540D;&#x7A7A;&#x95F4;">2.2 &#x4F7F;&#x7528;tf.variable_scope()&#x4FEE;&#x6539;OP&#x547D;&#x540D;&#x7A7A;&#x95F4;</h3>
+<p>&#x4F1A;&#x5728;OP&#x7684;&#x540D;&#x5B57;&#x524D;&#x9762;&#x589E;&#x52A0;&#x547D;&#x540D;&#x7A7A;&#x95F4;&#x7684;&#x6307;&#x5B9A;&#x540D;&#x5B57;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">with</span> tf.variable_scope(<span class="hljs-string">&quot;name&quot;</span>):
+    var = tf.Variable(name=<span class="hljs-string">&apos;var&apos;</span>, initial_value=[<span class="hljs-number">4</span>], dtype=tf.float32)
+    var_double = tf.Variable(name=<span class="hljs-string">&apos;var&apos;</span>, initial_value=[<span class="hljs-number">4</span>], dtype=tf.float32)
+
+&lt;tf.Variable <span class="hljs-string">&apos;name/var:0&apos;</span> shape=() dtype=float32_ref&gt;
+&lt;tf.Variable <span class="hljs-string">&apos;name/var_1:0&apos;</span> shape=() dtype=float32_ref&gt;
+</code></pre>
+<h3 id="22-tfgetvariable&#x5171;&#x4EAB;&#x53D8;&#x91CF;">2.2 tf.get_variable&#x5171;&#x4EAB;&#x53D8;&#x91CF;</h3>
+<p>&#x901A;&#x8FC7;tf.get_variable&#x7684;&#x521D;&#x59CB;&#x5316;&#x4E0E;Variable&#x53C2;&#x6570;&#x4E00;&#x6837;,<strong>&#x4F46;&#x662F;&#x8981;&#x662F;&#x5B9E;&#x73B0;&#x5171;&#x4EAB;&#x9700;&#x8981;&#x6253;&#x5F00;tf.variable_scope(&quot;name&quot;)&#x4E2D;&#x7684;reuse=tf.AUTO_REUSE&#x53C2;&#x6570;</strong> </p>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x6253;&#x5F00;&#x5171;&#x4EAB;&#x53C2;&#x6570;</span>
+<span class="hljs-comment"># &#x6216;&#x8005;</span>
+<span class="hljs-comment">#  with tf.variable_scope(&quot;name&quot;) as scope:</span>
+<span class="hljs-comment">#  &#x5728;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x5171;&#x4EAB;&#x53D8;&#x91CF;&#x7684;&#x524D;&#x9762;&#x5B9A;&#x4E49;&#xFF1A; scope.reuse_variables()</span>
+<span class="hljs-keyword">with</span> tf.variable_scope(<span class="hljs-string">&quot;name&quot;</span>, reuse=tf.AUTO_REUSE):
+    var = tf.Variable(initial_value=<span class="hljs-number">4.0</span>, name=<span class="hljs-string">&quot;var&quot;</span>, dtype=tf.float32)
+    var_double = tf.Variable(initial_value=<span class="hljs-number">4.0</span>, name=<span class="hljs-string">&quot;var&quot;</span>, dtype=tf.float32)
+
+    var1 = tf.get_variable(initializer=tf.random_normal([<span class="hljs-number">2</span>, <span class="hljs-number">2</span>], mean=<span class="hljs-number">0.0</span>, stddev=<span class="hljs-number">1.0</span>),
+                           name=<span class="hljs-string">&quot;var1&quot;</span>,
+                           dtype=tf.float32)
+    var1_double = tf.get_variable(initializer=tf.random_normal([<span class="hljs-number">2</span>, <span class="hljs-number">2</span>], mean=<span class="hljs-number">0.0</span>, stddev=<span class="hljs-number">1.0</span>),
+                           name=<span class="hljs-string">&quot;var1&quot;</span>,
+                           dtype=tf.float32)
+
+
+
+<span class="hljs-keyword">with</span> tf.Session() <span class="hljs-keyword">as</span> sess:
+    sess.run(tf.global_variables_initializer())
+    print(var1)
+    print(var1_double)
+</code></pre>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../day01/section4.html" class="navigation navigation-prev " aria-label="Previous page: 张量"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../day01/section6.html" class="navigation navigation-next " aria-label="Next page: 高级API"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"katex":{},"expandable-chapters-small":{},"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"livereload":{}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

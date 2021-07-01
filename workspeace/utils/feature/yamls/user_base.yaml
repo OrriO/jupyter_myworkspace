@@ -1,0 +1,415 @@
+# 用户特征映射表
+## 用户基础特征字典
+base_info:
+  constellation: &constellation
+    金牛座: 1
+    魔羯座: 2
+    双鱼座: 3
+    双子座: 4
+    巨蟹座: 5
+    天秤座: 6
+    天蝎座: 7
+    射手座: 8
+    水瓶座: 9
+    处女座: 10
+    白羊座: 11
+    狮子座: 12
+  province: &province
+    宁夏: 1
+    陕西: 2
+    山东: 3
+    吉林: 4
+    广西: 5
+    辽宁: 6
+    云南: 7
+    江苏: 8
+    湖北: 9
+    内蒙古: 10
+    山西: 11
+    黑龙江: 12
+    浙江: 13
+    四川: 14
+    河南: 15
+    西藏: 16
+    安徽: 17
+    天津: 18
+    重庆: 19
+    青海: 20
+    甘肃: 21
+    江西: 22
+    海南: 23
+    湖南: 24
+    北京: 25
+    贵州: 26
+    新疆: 27
+    上海: 28
+    广东: 29
+    河北: 30
+    福建: 31
+  zodiac: &zodiac
+    猴: 1
+    兔: 2
+    蛇: 3
+    鼠: 4
+    狗: 5
+    羊: 6
+    虎: 7
+    牛: 8
+    龙: 9
+    猪: 10
+    鸡: 11
+    马: 12
+#注册来源
+  source_type: &source_type
+    H5: 1
+    API: 2
+    APP: 3
+    第三方: 4
+    现场: 5
+    电话: 6
+    WEB: 7
+  gender_name: &gender_name
+    男: 1
+    女: 0
+  order_type: &order_type
+    严选: 1
+    追问包: 2
+    送心意: 3
+    一病多问: 4
+    定制包: 5
+    超级会员: 6
+    问诊: 7
+    保险: 8
+    健康商城: 9
+    药品: 10
+    预约: 11
+  client_type: &client_type
+    app: 1
+    web: 2
+    h5: 3
+#地级市信息
+  city: &city
+    上海: 1
+    北京: 2
+    武汉: 3
+    杭州: 4
+    重庆: 5
+    苏州: 6
+    深圳: 7
+    南京: 8
+    西安: 9
+    青岛: 10
+    广州: 11
+    天津: 12
+    常州: 13
+    无锡: 14
+    成都: 15
+    合肥: 16
+    长沙: 17
+    扬州: 18
+    郑州: 19
+    哈尔滨: 20
+    温州: 21
+    南通: 22
+    宁波: 23
+    济南: 24
+    徐州: 25
+    淮安: 26
+    烟台: 27
+    嘉兴: 28
+    镇江: 29
+    长春: 30
+    石家庄: 31
+    盐城: 32
+    洛阳: 33
+    泰州: 34
+    佛山: 35
+    潍坊: 36
+    台州: 37
+    东莞: 38
+    保定: 39
+    绍兴: 40
+    太原: 41
+    金华: 42
+    南阳: 43
+    临沂: 44
+    荆门: 45
+    廊坊: 46
+    随州: 47
+    宝鸡: 48
+    商丘: 49
+    泰安: 50
+    沈阳: 51
+    连云港: 52
+    兰州: 53
+    黄冈: 54
+    湖州: 55
+    济宁: 56
+    宿迁: 57
+    淮南: 58
+    福州: 59
+    邯郸: 60
+    海口: 61
+    菏泽: 62
+    泉州: 63
+    乌鲁木齐: 64
+    南宁: 65
+    宣城: 66
+    唐山: 67
+    厦门: 68
+    株洲: 69
+    上饶: 70
+    常德: 71
+    沧州: 72
+    孝感: 73
+    银川: 74
+    贵阳: 75
+    昆明: 76
+    达州: 77
+    南昌: 78
+    岳阳: 79
+    衡阳: 80
+    珠海: 81
+    呼和浩特: 82
+    信阳: 83
+    襄阳: 84
+    德州: 85
+    大连: 86
+    中山: 87
+    枣庄: 88
+    聊城: 89
+    焦作: 90
+    荆州: 91
+    汉中: 92
+    芜湖: 93
+    西宁: 94
+    舟山: 95
+    佳木斯: 96
+    遵义: 97
+    淄博: 98
+    肇庆: 99
+    周口: 100
+    晋城: 101
+    运城: 102
+    许昌: 103
+    滨州: 104
+    宜宾: 105
+    濮阳: 106
+    宜昌: 107
+    驻马店: 108
+    齐齐哈尔: 109
+    新乡: 110
+    张家口: 111
+    宜春: 112
+    九江: 113
+    平顶山: 114
+    邢台: 115
+    邵阳: 116
+    咸阳: 117
+    大庆: 118
+    惠州: 119
+    赣州: 120
+    日照: 121
+    安阳: 122
+    咸宁: 123
+    威海: 124
+    吉林市: 125
+    晋中: 126
+    黄石: 127
+    马鞍山: 128
+    安庆: 129
+    牡丹江: 130
+    南充: 131
+    黑河: 132
+    绥化: 133
+    绵阳: 134
+    三亚: 135
+    汕头: 136
+    渭南: 137
+    衡水: 138
+    丽水: 139
+    广安: 140
+    榆林: 141
+    承德: 142
+    德阳: 143
+    临汾: 144
+    玉林: 145
+    阜阳: 146
+    开封: 147
+    湛江: 148
+    秦皇岛: 149
+    长治: 150
+    伊春: 151
+    江门: 152
+    娄底: 153
+    宿州: 154
+    淮北: 155
+    漳州: 156
+    吕梁: 157
+    衢州: 158
+    滁州: 159
+    吉安: 160
+    茂名: 161
+    东营: 162
+    恩施土家族苗族自治州: 163
+    营口: 164
+    湘潭: 165
+    怀化: 166
+    清远: 167
+    抚州: 168
+    益阳: 169
+    永州: 170
+    鄂州: 171
+    宁德: 172
+    赤峰: 173
+    乐山: 174
+    亳州: 175
+    包头: 176
+    忻州: 177
+    大同: 178
+    鸡西: 179
+    鄂尔多斯: 180
+    鞍山: 181
+    昌吉回族自治州: 182
+    梧州: 183
+    莱芜: 184
+    百色: 185
+    河池: 186
+    十堰: 187
+    抚顺: 188
+    内江: 189
+    大兴安岭地区: 190
+    铁岭: 191
+    安康: 192
+    莆田: 193
+    延安: 194
+    眉山: 195
+    景德镇: 196
+    揭阳: 197
+    锦州: 198
+    龙岩: 199
+    钦州: 200
+#活跃时段
+  visit_preference_time: &visit_preference_time
+    上午: 1
+    下午: 2
+    晚上: 3
+#活跃等级
+  active_level: &active_level
+    本月注册: 1
+    低活跃: 2
+    中活跃: 3
+    高活跃: 4
+    沉默新用户: 5
+    沉默历史用户: 6
+    潜在流失用户: 7
+    流失用户: 8
+#用户统计类特征字典
+
+feature_column:
+  constellation_name:
+    -
+      engine: LabelEncoder
+      unknow: -99
+      encoder_table: *constellation
+
+  zodiac_name:
+    -
+      engine: LabelEncoder
+      unknow: -99
+      encoder_table: *zodiac
+
+  gender_name:
+    -
+      engine: LabelEncoder
+      unknow: -99
+      encoder_table: *gender_name
+
+  cert_province_name:
+    -
+      engine: LabelEncoder
+      unknow: -99
+      encoder_table: *province
+
+  phone_province_name:
+    -
+      engine: LabelEncoder
+      unknow: -99
+      encoder_table: *province
+
+  source_type_name:
+    -
+      engine: LabelEncoder
+      unknow: -99
+      encoder_table: *source_type
+
+  favorite_busi_type_name:
+    -
+      engine: LabelEncoder
+      unknow: -99
+      encoder_table: *order_type
+
+  favorite_busi_type_name_1year:
+    - engine: LabelEncoder
+      unknow: -99
+      encoder_table: *order_type
+
+  login_city_ration_1year:
+    -
+      engine: LabelEncoder
+      unknow: -99
+      encoder_table: *city
+
+  login_city_ration_half_year:
+    -
+      engine: LabelEncoder
+      unknow: -99
+      encoder_table: *city
+
+  login_city_ration_1month:
+    -
+      engine: LabelEncoder
+      unknow: -99
+      encoder_table: *city
+
+  last_login_city:
+     -
+      engine: LabelEncoder
+      unknow: -99
+      encoder_table: *city
+
+  active_platform_1year:
+    -
+      engine: LabelEncoder
+      unknow: -99
+      encoder_table: *client_type
+
+  active_platform_half_year:
+    -
+      engine: LabelEncoder
+      unknow: -99
+      encoder_table: *client_type
+
+  active_platform_1month:
+    -
+      engine: LabelEncoder
+      unknow: -99
+      encoder_table: *client_type
+
+  latest_active_platform:
+    -
+      engine: LabelEncoder
+      unknow: -99
+      encoder_table: *client_type
+
+  visit_preference_time:
+     -
+      engine: LabelEncoder
+      unknow: -99
+      encoder_table: *visit_preference_time
+
+  active_level:
+     -
+      engine: LabelEncoder
+      unknow: -99
+      encoder_table: *active_level

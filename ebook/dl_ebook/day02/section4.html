@@ -1,0 +1,920 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>TFRecords | 深度学习课程定位、目标</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-katex/katex.min.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../day02/section5.html" />
+    
+    
+    <link rel="prev" href="../day02/section3.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="3.4"
+        data-chapter-title="TFRecords"
+        data-filepath="day02/section4.md"
+        data-basepath=".."
+        data-revision="Sun May 20 2018 14:15:08 GMT+0800 (CST)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        深度学习与图像识别课程
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="DeepLearning/index.html">
+            
+                
+                    <a href="../DeepLearning/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        深度学习介绍
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="DeepLearning/section1.html">
+            
+                
+                    <a href="../DeepLearning/section1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        深度学习与机器学习的区别
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="DeepLearning/section2.html">
+            
+                
+                    <a href="../DeepLearning/section2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        深度学习的应用场景
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="DeepLearning/section3.html">
+            
+                
+                    <a href="../DeepLearning/section3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        深度学习框架介绍
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="day01/index.html">
+            
+                
+                    <a href="../day01/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        TensorFlow框架介绍
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="day01/section1.html">
+            
+                
+                    <a href="../day01/section1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        TF数据流图
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="day01/section2.html">
+            
+                
+                    <a href="../day01/section2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        图与TensorBoard
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="day01/section3.html">
+            
+                
+                    <a href="../day01/section3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        会话
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="day01/section4.html">
+            
+                
+                    <a href="../day01/section4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        张量
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="day01/section5.html">
+            
+                
+                    <a href="../day01/section5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        变量OP
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="day01/section6.html">
+            
+                
+                    <a href="../day01/section6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        高级API
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="day01/section7.html">
+            
+                
+                    <a href="../day01/section7.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.</b>
+                        
+                        案例：实现线性回归
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="day01/section8.html">
+            
+                
+                    <a href="../day01/section8.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.8.</b>
+                        
+                        总结
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="day01/section9.html">
+            
+                
+                    <a href="../day01/section9.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.9.</b>
+                        
+                        每日作业
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="day02/index.html">
+            
+                
+                    <a href="../day02/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        数据读取、神经网络
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="day02/section1.html">
+            
+                
+                    <a href="../day02/section1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        文件读取流程
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="day02/section2.html">
+            
+                
+                    <a href="../day02/section2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        图片数据
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="day02/section3.html">
+            
+                
+                    <a href="../day02/section3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        二进制数据
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.4" data-path="day02/section4.html">
+            
+                
+                    <a href="../day02/section4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        TFRecords
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="day02/section5.html">
+            
+                
+                    <a href="../day02/section5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.</b>
+                        
+                        神经网络基础
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="day02/section6.html">
+            
+                
+                    <a href="../day02/section6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.</b>
+                        
+                        神经网络原理
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="day02/section7.html">
+            
+                
+                    <a href="../day02/section7.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.7.</b>
+                        
+                        案例：Mnist手写数字识别
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" data-path="day02/section8.html">
+            
+                
+                    <a href="../day02/section8.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.8.</b>
+                        
+                        线性神经网络局限性
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9" data-path="day02/section9.html">
+            
+                
+                    <a href="../day02/section9.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.9.</b>
+                        
+                        总结
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.10" data-path="day02/section10.html">
+            
+                
+                    <a href="../day02/section10.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.10.</b>
+                        
+                        每日作业
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="day03/index.html">
+            
+                
+                    <a href="../day03/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        卷积神经网络
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="day03/section1.html">
+            
+                
+                    <a href="../day03/section1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        卷积神经网络简介
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="day03/section2.html">
+            
+                
+                    <a href="../day03/section2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        卷积神经网络原理
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="day03/section3.html">
+            
+                
+                    <a href="../day03/section3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        案例：CNNMnist手写数字识别
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="day03/section4.html">
+            
+                
+                    <a href="../day03/section4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        网络结构与优化
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="day03/section5.html">
+            
+                
+                    <a href="../day03/section5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                        实战：验证码图片识别
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="day03/section6.html">
+            
+                
+                    <a href="../day03/section6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.6.</b>
+                        
+                        总结
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="day03/section7.html">
+            
+                
+                    <a href="../day03/section7.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.7.</b>
+                        
+                        每日作业
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >深度学习课程定位、目标</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="tfrecords">TFRecords</h1>
+<h2 id="&#x5B66;&#x4E60;&#x76EE;&#x6807;">&#x5B66;&#x4E60;&#x76EE;&#x6807;</h2>
+<ul>
+<li>&#x76EE;&#x6807;<ul>
+<li>&#x8BF4;&#x660E;Example&#x7684;&#x7ED3;&#x6784;</li>
+<li>&#x5E94;&#x7528;TFRecordWriter&#x5B9E;&#x73B0;TFRecords&#x6587;&#x4EF6;&#x5B58;&#x50A8;&#x5668;&#x7684;&#x6784;&#x9020;</li>
+<li>&#x5E94;&#x7528;parse_single_example&#x5B9E;&#x73B0;&#x89E3;&#x6790;Example&#x7ED3;&#x6784;</li>
+</ul>
+</li>
+<li>&#x5E94;&#x7528;<ul>
+<li>CIFAR10&#x7C7B;&#x56FE;&#x7247;&#x7684;&#x6570;&#x636E;&#x7684;TFRecords&#x5B58;&#x50A8;&#x548C;&#x8BFB;&#x53D6;</li>
+</ul>
+</li>
+</ul>
+<h2 id="1&#x3001;&#x4EC0;&#x4E48;&#x662F;tfrecords&#x6587;&#x4EF6;">1&#x3001;&#x4EC0;&#x4E48;&#x662F;TFRecords&#x6587;&#x4EF6;</h2>
+<p>TFRecords&#x5176;&#x5B9E;&#x662F;&#x4E00;&#x79CD;&#x4E8C;&#x8FDB;&#x5236;&#x6587;&#x4EF6;&#xFF0C;&#x867D;&#x7136;&#x5B83;&#x4E0D;&#x5982;&#x5176;&#x4ED6;&#x683C;&#x5F0F;&#x597D;&#x7406;&#x89E3;&#xFF0C;&#x4F46;&#x662F;&#x5B83;&#x80FD;&#x66F4;&#x597D;&#x7684;&#x5229;&#x7528;&#x5185;&#x5B58;&#xFF0C;&#x66F4;&#x65B9;&#x4FBF;&#x590D;&#x5236;&#x548C;&#x79FB;&#x52A8;&#xFF0C;<strong>&#x5E76;&#x4E14;&#x4E0D;&#x9700;&#x8981;&#x5355;&#x72EC;&#x7684;&#x6807;&#x7B7E;&#x6587;&#x4EF6;</strong>&#x3002;</p>
+<p>TFRecords&#x6587;&#x4EF6;&#x5305;&#x542B;&#x4E86;<code>tf.train.Example</code> &#x534F;&#x8BAE;&#x5185;&#x5B58;&#x5757;(protocol buffer)(&#x534F;&#x8BAE;&#x5185;&#x5B58;&#x5757;&#x5305;&#x542B;&#x4E86;&#x5B57;&#x6BB5; <code>Features</code>)&#x3002;&#x53EF;&#x4EE5;&#x83B7;&#x53D6;&#x4F60;&#x7684;&#x6570;&#x636E;&#xFF0C; &#x5C06;&#x6570;&#x636E;&#x586B;&#x5165;&#x5230;<code>Example</code>&#x534F;&#x8BAE;&#x5185;&#x5B58;&#x5757;(protocol buffer)&#xFF0C;&#x5C06;&#x534F;&#x8BAE;&#x5185;&#x5B58;&#x5757;&#x5E8F;&#x5217;&#x5316;&#x4E3A;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#xFF0C; &#x5E76;&#x4E14;&#x901A;&#x8FC7;<code>tf.python_io.TFRecordWriter</code> &#x5199;&#x5165;&#x5230;TFRecords&#x6587;&#x4EF6;&#x3002;</p>
+<ul>
+<li>&#x6587;&#x4EF6;&#x683C;&#x5F0F; *.tfrecords </li>
+</ul>
+<h2 id="2&#x3001;example&#x7ED3;&#x6784;&#x89E3;&#x6790;">2&#x3001;Example&#x7ED3;&#x6784;&#x89E3;&#x6790;</h2>
+<p><code>tf.train.Example</code> &#x534F;&#x8BAE;&#x5185;&#x5B58;&#x5757;(protocol buffer)(&#x534F;&#x8BAE;&#x5185;&#x5B58;&#x5757;&#x5305;&#x542B;&#x4E86;&#x5B57;&#x6BB5; <code>Features</code>)&#xFF0C;<code>Features</code>&#x5305;&#x542B;&#x4E86;&#x4E00;&#x4E2A;<code>Feature</code>&#x5B57;&#x6BB5;&#xFF0C;<code>Features</code>&#x4E2D;&#x5305;&#x542B;&#x8981;&#x5199;&#x5165;&#x7684;&#x6570;&#x636E;&#x3001;&#x5E76;&#x6307;&#x660E;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x3002;&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x6837;&#x672C;&#x7684;&#x7ED3;&#x6784;&#xFF0C;&#x6279;&#x6570;&#x636E;&#x9700;&#x8981;&#x5FAA;&#x73AF;&#x5B58;&#x5165;&#x8FD9;&#x6837;&#x7684;&#x7ED3;&#x6784;</p>
+<ul>
+<li>tf.train.Example(<strong>features</strong>=None)<ul>
+<li>&#x5199;&#x5165;tfrecords&#x6587;&#x4EF6;</li>
+<li>features:tf.train.Features&#x7C7B;&#x578B;&#x7684;&#x7279;&#x5F81;&#x5B9E;&#x4F8B;</li>
+<li>return&#xFF1A;example&#x683C;&#x5F0F;&#x534F;&#x8BAE;&#x5757;</li>
+</ul>
+</li>
+<li>tf.train.<strong>Features</strong>(<strong>feature</strong>=None)<ul>
+<li>&#x6784;&#x5EFA;&#x6BCF;&#x4E2A;&#x6837;&#x672C;&#x7684;&#x4FE1;&#x606F;&#x952E;&#x503C;&#x5BF9;</li>
+<li>feature:&#x5B57;&#x5178;&#x6570;&#x636E;,key&#x4E3A;&#x8981;&#x4FDD;&#x5B58;&#x7684;&#x540D;&#x5B57;</li>
+<li>value&#x4E3A;tf.train.Feature&#x5B9E;&#x4F8B;</li>
+<li>return:Features&#x7C7B;&#x578B;</li>
+</ul>
+</li>
+<li>tf.train.<strong>Feature</strong>(options)<ul>
+<li>options&#xFF1A;&#x4F8B;&#x5982;<ul>
+<li>bytes_list=tf.train. BytesList(value=[Bytes])</li>
+<li>int64_list=tf.train. Int64List(value=[Value])</li>
+</ul>
+</li>
+<li>&#x652F;&#x6301;&#x5B58;&#x5165;&#x7684;&#x7C7B;&#x578B;&#x5982;&#x4E0B;</li>
+<li>tf.train.Int64List(value=[Value])</li>
+<li>tf.train.BytesList(value=[Bytes]) </li>
+<li>tf.train.FloatList(value=[value]) </li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>&#x8FD9;&#x79CD;&#x7ED3;&#x6784;&#x662F;&#x4E0D;&#x662F;&#x5F88;&#x597D;&#x7684;&#x89E3;&#x51B3;&#x4E86;<strong>&#x6570;&#x636E;&#x548C;&#x6807;&#x7B7E;(&#x8BAD;&#x7EC3;&#x7684;&#x7C7B;&#x522B;&#x6807;&#x7B7E;)&#x6216;&#x8005;&#x5176;&#x4ED6;&#x5C5E;&#x6027;&#x6570;&#x636E;&#x5B58;&#x50A8;&#x5728;&#x540C;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x4E2D;</strong> </p>
+</blockquote>
+<h2 id="3&#x3001;&#x6848;&#x4F8B;&#xFF1A;cifar10&#x6570;&#x636E;&#x5B58;&#x5165;tfrecords&#x6587;&#x4EF6;">3&#x3001;&#x6848;&#x4F8B;&#xFF1A;CIFAR10&#x6570;&#x636E;&#x5B58;&#x5165;TFRecords&#x6587;&#x4EF6;</h2>
+<h3 id="31&#x5206;&#x6790;">3.1&#x5206;&#x6790;</h3>
+<ul>
+<li><p>&#x6784;&#x9020;&#x5B58;&#x50A8;&#x5B9E;&#x4F8B;&#xFF0C;tf.python_io.TFRecordWriter(path)</p>
+<ul>
+<li>&#x5199;&#x5165;tfrecords&#x6587;&#x4EF6;</li>
+<li>path: TFRecords&#x6587;&#x4EF6;&#x7684;&#x8DEF;&#x5F84;</li>
+<li>return&#xFF1A;&#x5199;&#x6587;&#x4EF6;</li>
+<li>method</li>
+<li>write(record):&#x5411;&#x6587;&#x4EF6;&#x4E2D;&#x5199;&#x5165;&#x4E00;&#x4E2A;example</li>
+<li>close():&#x5173;&#x95ED;&#x6587;&#x4EF6;&#x5199;&#x5165;&#x5668;</li>
+</ul>
+</li>
+<li><p>&#x5FAA;&#x73AF;&#x5C06;&#x6570;&#x636E;&#x586B;&#x5165;&#x5230;<code>Example</code>&#x534F;&#x8BAE;&#x5185;&#x5B58;&#x5757;(protocol buffer)</p>
+</li>
+</ul>
+<h3 id="32&#x4EE3;&#x7801;">3.2&#x4EE3;&#x7801;</h3>
+<pre><code class="lang-python">    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">write_to_tfrecords</span><span class="hljs-params">(self, image_batch, label_batch)</span>:</span>
+        <span class="hljs-string">&quot;&quot;&quot;
+        &#x5C06;&#x6570;&#x636E;&#x5B58;&#x8FDB;tfrecords&#xFF0C;&#x65B9;&#x4FBF;&#x7BA1;&#x7406;&#x6BCF;&#x4E2A;&#x6837;&#x672C;&#x7684;&#x5C5E;&#x6027;
+        :param image_batch: &#x7279;&#x5F81;&#x503C;
+        :param label_batch: &#x76EE;&#x6807;&#x503C;
+        :return: None
+        &quot;&quot;&quot;</span>
+        <span class="hljs-comment"># 1&#x3001;&#x6784;&#x9020;tfrecords&#x7684;&#x5B58;&#x50A8;&#x5B9E;&#x4F8B;</span>
+        writer = tf.python_io.TFRecordWriter(FLAGS.tfrecords_dir)
+
+        <span class="hljs-comment"># 2&#x3001;&#x5FAA;&#x73AF;&#x5C06;&#x6BCF;&#x4E2A;&#x6837;&#x672C;&#x5199;&#x5165;&#x5230;&#x6587;&#x4EF6;&#x5F53;&#x4E2D;</span>
+        <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">10</span>):
+
+            <span class="hljs-comment"># &#x4E00;&#x4E2A;&#x6837;&#x672C;&#x4E00;&#x4E2A;&#x6837;&#x672C;&#x7684;&#x5904;&#x7406;&#x5199;&#x5165;</span>
+            <span class="hljs-comment"># &#x51C6;&#x5907;&#x7279;&#x5F81;&#x503C;&#xFF0C;&#x7279;&#x5F81;&#x503C;&#x5FC5;&#x987B;&#x662F;bytes&#x7C7B;&#x578B; &#x8C03;&#x7528;tostring()&#x51FD;&#x6570;</span>
+            <span class="hljs-comment"># [10, 32, 32, 3] &#xFF0C;&#x5728;&#x8FD9;&#x91CC;&#x907F;&#x514D;tensorflow&#x7684;&#x5751;&#xFF0C;&#x53D6;&#x51FA;&#x6765;&#x7684;&#x4E0D;&#x662F;&#x771F;&#x6B63;&#x7684;&#x503C;&#xFF0C;&#x800C;&#x662F;&#x7C7B;&#x578B;&#xFF0C;&#x6240;&#x4EE5;&#x8981;&#x8FD0;&#x884C;&#x7ED3;&#x679C;&#x624D;&#x80FD;&#x5B58;&#x5165;</span>
+            <span class="hljs-comment"># &#x51FA;&#x73B0;&#x4E86;eval,&#x90A3;&#x5C31;&#x8981;&#x5728;&#x4F1A;&#x8BDD;&#x5F53;&#x4E2D;&#x53BB;&#x8FD0;&#x884C;&#x8BE5;&#x884C;&#x6570;</span>
+            image = image_batch[i].eval().tostring()
+
+            <span class="hljs-comment"># &#x51C6;&#x5907;&#x76EE;&#x6807;&#x503C;&#xFF0C;&#x76EE;&#x6807;&#x503C;&#x662F;&#x4E00;&#x4E2A;Int&#x7C7B;&#x578B;</span>
+            <span class="hljs-comment"># eval()--&gt;[6]---&gt;6</span>
+            label = label_batch[i].eval()[<span class="hljs-number">0</span>]
+
+            <span class="hljs-comment"># &#x7ED1;&#x5B9A;&#x6BCF;&#x4E2A;&#x6837;&#x672C;&#x7684;&#x5C5E;&#x6027;</span>
+            example = tf.train.Example(features=tf.train.Features(feature={
+                <span class="hljs-string">&quot;image&quot;</span>: tf.train.Feature(bytes_list=tf.train.BytesList(value=[image])),
+                <span class="hljs-string">&quot;label&quot;</span>: tf.train.Feature(int64_list=tf.train.Int64List(value=[label])),
+            }))
+
+            <span class="hljs-comment"># &#x5199;&#x5165;&#x6BCF;&#x4E2A;&#x6837;&#x672C;&#x7684;example</span>
+            writer.write(example.SerializeToString())
+
+        <span class="hljs-comment"># &#x6587;&#x4EF6;&#x9700;&#x8981;&#x5173;&#x95ED;</span>
+        writer.close()
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">None</span>
+
+    <span class="hljs-comment"># &#x5F00;&#x542F;&#x4F1A;&#x8BDD;&#x6253;&#x5370;&#x5185;&#x5BB9;</span>
+    <span class="hljs-keyword">with</span> tf.Session() <span class="hljs-keyword">as</span> sess:
+        <span class="hljs-comment"># &#x521B;&#x5EFA;&#x7EBF;&#x7A0B;&#x534F;&#x8C03;&#x5668;</span>
+        coord = tf.train.Coordinator()
+
+        <span class="hljs-comment"># &#x5F00;&#x542F;&#x5B50;&#x7EBF;&#x7A0B;&#x53BB;&#x8BFB;&#x53D6;&#x6570;&#x636E;</span>
+        <span class="hljs-comment"># &#x8FD4;&#x56DE;&#x5B50;&#x7EBF;&#x7A0B;&#x5B9E;&#x4F8B;</span>
+        threads = tf.train.start_queue_runners(sess=sess, coord=coord)
+
+        <span class="hljs-comment"># &#x83B7;&#x53D6;&#x6837;&#x672C;&#x6570;&#x636E;&#x53BB;&#x8BAD;&#x7EC3;</span>
+        print(sess.run([image_batch, label_batch]))
+
+        <span class="hljs-comment"># &#x5B58;&#x5165;&#x6570;&#x636E;</span>
+        cr.write_to_tfrecords(image_batch, label_batch )
+
+        <span class="hljs-comment"># &#x5173;&#x95ED;&#x5B50;&#x7EBF;&#x7A0B;&#xFF0C;&#x56DE;&#x6536;</span>
+        coord.request_stop()
+
+        coord.join(threads)
+</code></pre>
+<h2 id="4&#x3001;&#x8BFB;&#x53D6;tfrecords&#x6587;&#x4EF6;">4&#x3001;&#x8BFB;&#x53D6;TFRecords&#x6587;&#x4EF6;</h2>
+<p>&#x8BFB;&#x53D6;&#x8FD9;&#x79CD;&#x6587;&#x4EF6;&#x6574;&#x4E2A;&#x8FC7;&#x7A0B;&#x4E0E;&#x5176;&#x4ED6;&#x6587;&#x4EF6;&#x4E00;&#x6837;&#xFF0C;&#x53EA;&#x4E0D;&#x8FC7;&#x9700;&#x8981;&#x6709;&#x4E2A;&#x89E3;&#x6790;Example&#x7684;&#x6B65;&#x9AA4;&#x3002;&#x4ECE;TFRecords&#x6587;&#x4EF6;&#x4E2D;&#x8BFB;&#x53D6;&#x6570;&#x636E;&#xFF0C; &#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>tf.TFRecordReader</code>&#x7684;<code>tf.parse_single_example</code>&#x89E3;&#x6790;&#x5668;&#x3002;&#x8FD9;&#x4E2A;&#x64CD;&#x4F5C;&#x53EF;&#x4EE5;&#x5C06;<code>Example</code>&#x534F;&#x8BAE;&#x5185;&#x5B58;&#x5757;(protocol buffer)&#x89E3;&#x6790;&#x4E3A;&#x5F20;&#x91CF;&#x3002;</p>
+<ul>
+<li><p>tf.parse_single_example(serialized,features=None,name=None)</p>
+<ul>
+<li>&#x89E3;&#x6790;&#x4E00;&#x4E2A;&#x5355;&#x4E00;&#x7684;Example&#x539F;&#x578B;</li>
+<li>serialized&#xFF1A;&#x6807;&#x91CF;&#x5B57;&#x7B26;&#x4E32;Tensor&#xFF0C;&#x4E00;&#x4E2A;&#x5E8F;&#x5217;&#x5316;&#x7684;Example</li>
+<li>features&#xFF1A;dict&#x5B57;&#x5178;&#x6570;&#x636E;&#xFF0C;&#x952E;&#x4E3A;&#x8BFB;&#x53D6;&#x7684;&#x540D;&#x5B57;&#xFF0C;&#x503C;&#x4E3A;FixedLenFeature</li>
+<li>return:&#x4E00;&#x4E2A;&#x952E;&#x503C;&#x5BF9;&#x7EC4;&#x6210;&#x7684;&#x5B57;&#x5178;&#xFF0C;&#x952E;&#x4E3A;&#x8BFB;&#x53D6;&#x7684;&#x540D;&#x5B57;</li>
+</ul>
+</li>
+<li><p>tf.FixedLenFeature(shape,dtype)</p>
+<ul>
+<li>shape&#xFF1A;&#x8F93;&#x5165;&#x6570;&#x636E;&#x7684;&#x5F62;&#x72B6;&#xFF0C;&#x4E00;&#x822C;&#x4E0D;&#x6307;&#x5B9A;,&#x4E3A;&#x7A7A;&#x5217;&#x8868;</li>
+<li>dtype&#xFF1A;&#x8F93;&#x5165;&#x6570;&#x636E;&#x7C7B;&#x578B;&#xFF0C;&#x4E0E;&#x5B58;&#x50A8;&#x8FDB;&#x6587;&#x4EF6;&#x7684;&#x7C7B;&#x578B;&#x8981;&#x4E00;&#x81F4;</li>
+<li>&#x7C7B;&#x578B;&#x53EA;&#x80FD;&#x662F;float32,int64,string</li>
+</ul>
+</li>
+</ul>
+<h3 id="5&#x3001;&#x6848;&#x4F8B;&#xFF1A;&#x8BFB;&#x53D6;cifar&#x7684;tfrecords&#x6587;&#x4EF6;">5&#x3001;&#x6848;&#x4F8B;&#xFF1A;&#x8BFB;&#x53D6;CIFAR&#x7684;TFRecords&#x6587;&#x4EF6;</h3>
+<h3 id="51-&#x5206;&#x6790;">5.1 &#x5206;&#x6790;</h3>
+<ul>
+<li>&#x4F7F;&#x7528;tf.train.string_input_producer&#x6784;&#x9020;&#x6587;&#x4EF6;&#x961F;&#x5217;</li>
+<li>tf.TFRecordReader &#x8BFB;&#x53D6;TFRecords&#x6570;&#x636E;&#x5E76;&#x8FDB;&#x884C;&#x89E3;&#x6790;<ul>
+<li>tf.parse_single_example&#x8FDB;&#x884C;&#x89E3;&#x6790;</li>
+</ul>
+</li>
+<li>tf.decode_raw&#x89E3;&#x7801;<ul>
+<li>&#x7C7B;&#x578B;&#x662F;bytes&#x7C7B;&#x578B;&#x9700;&#x8981;&#x89E3;&#x7801;</li>
+<li>&#x5176;&#x4ED6;&#x7C7B;&#x578B;&#x4E0D;&#x9700;&#x8981;</li>
+</ul>
+</li>
+<li><strong>&#x5904;&#x7406;&#x56FE;&#x7247;&#x6570;&#x636E;&#x5F62;&#x72B6;&#x4EE5;&#x53CA;&#x6570;&#x636E;&#x7C7B;&#x578B;</strong>&#xFF0C;&#x6279;&#x5904;&#x7406;&#x8FD4;&#x56DE;</li>
+<li>&#x5F00;&#x542F;&#x4F1A;&#x8BDD;&#x7EBF;&#x7A0B;&#x8FD0;&#x884C;</li>
+</ul>
+<h3 id="52-&#x4EE3;&#x7801;">5.2 &#x4EE3;&#x7801;</h3>
+<pre><code class="lang-python">    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">read_tfrecords</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-string">&quot;&quot;&quot;
+        &#x8BFB;&#x53D6;tfrecords&#x7684;&#x6570;&#x636E;
+        :return: None
+        &quot;&quot;&quot;</span>
+        <span class="hljs-comment"># 1&#x3001;&#x6784;&#x9020;&#x6587;&#x4EF6;&#x961F;&#x5217;</span>
+        file_queue = tf.train.string_input_producer([<span class="hljs-string">&quot;./tmp/cifar.tfrecords&quot;</span>])
+
+        <span class="hljs-comment"># 2&#x3001;&#x6784;&#x9020;tfrecords&#x8BFB;&#x53D6;&#x5668;&#xFF0C;&#x8BFB;&#x53D6;&#x961F;&#x5217;</span>
+        reader = tf.TFRecordReader()
+
+        <span class="hljs-comment"># &#x9ED8;&#x8BA4;&#x4E5F;&#x662F;&#x53EA;&#x8BFB;&#x53D6;&#x4E00;&#x4E2A;&#x6837;&#x672C;</span>
+        key, values = reader.read(file_queue)
+
+        <span class="hljs-comment"># tfrecords</span>
+        <span class="hljs-comment"># &#x591A;&#x4E86;&#x89E3;&#x6790;example&#x7684;&#x4E00;&#x4E2A;&#x6B65;&#x9AA4;</span>
+        feature = tf.parse_single_example(values, features={
+            <span class="hljs-string">&quot;image&quot;</span>: tf.FixedLenFeature([], tf.string),
+            <span class="hljs-string">&quot;label&quot;</span>: tf.FixedLenFeature([], tf.int64)
+        })
+
+        <span class="hljs-comment"># &#x53D6;&#x51FA;feature&#x91CC;&#x9762;&#x7684;&#x7279;&#x5F81;&#x503C;&#x548C;&#x76EE;&#x6807;&#x503C;</span>
+        <span class="hljs-comment"># &#x901A;&#x8FC7;&#x952E;&#x503C;&#x5BF9;&#x83B7;&#x53D6;</span>
+        image = feature[<span class="hljs-string">&quot;image&quot;</span>]
+
+        label = feature[<span class="hljs-string">&quot;label&quot;</span>]
+
+        <span class="hljs-comment"># 3&#x3001;&#x89E3;&#x7801;&#x64CD;&#x4F5C;</span>
+        <span class="hljs-comment"># &#x5BF9;&#x4E8E;image&#x662F;&#x4E00;&#x4E2A;bytes&#x7C7B;&#x578B;&#xFF0C;&#x6240;&#x4EE5;&#x9700;&#x8981;decode_raw&#x53BB;&#x89E3;&#x7801;&#x6210;uint8&#x5F20;&#x91CF;</span>
+        <span class="hljs-comment"># &#x5BF9;&#x4E8E;Label:&#x672C;&#x8EAB;&#x662F;&#x4E00;&#x4E2A;int&#x7C7B;&#x578B;&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x53BB;&#x89E3;&#x7801;</span>
+        image = tf.decode_raw(image, tf.uint8)
+
+        print(image, label)
+
+        <span class="hljs-comment"># &#x5904;&#x7406;image&#x7684;&#x5F62;&#x72B6;&#x548C;&#x7C7B;&#x578B;</span>
+        image_reshape = tf.reshape(image, [self.height, self.width, self.channel])
+
+        <span class="hljs-comment"># &#x5904;&#x7406;label&#x7684;&#x5F62;&#x72B6;&#x548C;&#x7C7B;&#x578B;</span>
+        label_cast = tf.cast(label, tf.int32)
+
+        print(image_reshape, label_cast)
+
+        <span class="hljs-comment"># 4&#x3001;&#x6279;&#x5904;&#x7406;&#x64CD;&#x4F5C;</span>
+        image_batch, label_batch = tf.train.batch([image_reshape, label_cast], batch_size=<span class="hljs-number">10</span>, num_threads=<span class="hljs-number">1</span>, capacity=<span class="hljs-number">10</span>)
+
+        print(image_batch, label_batch)
+        <span class="hljs-keyword">return</span> image_batch, label_batch
+
+
+
+
+    <span class="hljs-comment"># &#x4ECE;tfrecords&#x6587;&#x4EF6;&#x8BFB;&#x53D6;&#x6570;&#x636E;</span>
+    image_batch, label_batch = cr.read_tfrecords()
+
+    <span class="hljs-comment"># &#x5F00;&#x542F;&#x4F1A;&#x8BDD;&#x6253;&#x5370;&#x5185;&#x5BB9;</span>
+    <span class="hljs-keyword">with</span> tf.Session() <span class="hljs-keyword">as</span> sess:
+        <span class="hljs-comment"># &#x521B;&#x5EFA;&#x7EBF;&#x7A0B;&#x534F;&#x8C03;&#x5668;</span>
+        coord = tf.train.Coordinator()
+</code></pre>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../day02/section3.html" class="navigation navigation-prev " aria-label="Previous page: 二进制数据"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../day02/section5.html" class="navigation navigation-next " aria-label="Next page: 神经网络基础"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"katex":{},"expandable-chapters-small":{},"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"livereload":{}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

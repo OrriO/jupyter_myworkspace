@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/workspace/data_local_test/%E5%B7%A5%E7%A8%8B%E6%B5%8B%E8%AF%95/mlflow_test/mlruns/0/a89d1cf0ad6146e0b37ac7011cb0a342/artifacts
+end_time: 1583118760739
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: a89d1cf0ad6146e0b37ac7011cb0a342
+run_uuid: a89d1cf0ad6146e0b37ac7011cb0a342
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1583118760680
+status: 3
+tags: []
+user_id: Ori

@@ -1,0 +1,331 @@
+# 医生基础信息映射表
+base_info:
+  common_status: &common_status
+    "0": 0
+    "1": 1
+    "2": 2
+    "3": 3
+    "4": 4
+    "5": 5
+  favorite_department: &favorite_department
+    467bb1d6-32cd-11e6-95f4-b82a72d5b9fb: 1
+    467badd0-32cd-11e6-95f4-b82a72d5b9fb: 2
+    467ba8ce-32cd-11e6-95f4-b82a72d5b9fb: 3
+    467bb131-32cd-11e6-95f4-b82a72d5b9fb: 4
+    467bad8a-32cd-11e6-95f4-b82a72d5b9fb: 5
+    467bb01e-32cd-11e6-95f4-b82a72d5b9fb: 6
+    467bb263-32cd-11e6-95f4-b82a72d5b9fb: 7
+    467baf86-32cd-11e6-95f4-b82a72d5b9fb: 8
+    82137021-aaec-11e8-bbc9-44a8420c5800: 9
+    467bacfb-32cd-11e6-95f4-b82a72d5b9fb: 10
+    467bb13a-32cd-11e6-95f4-b82a72d5b9fb: 11
+    467bad4a-32cd-11e6-95f4-b82a72d5b9fb: 12
+    467bb26c-32cd-11e6-95f4-b82a72d5b9fb: 13
+    467bae33-32cd-11e6-95f4-b82a72d5b9fb: 14
+    467bad9e-32cd-11e6-95f4-b82a72d5b9fb: 15
+    467bb18e-32cd-11e6-95f4-b82a72d5b9fb: 16
+    467ba8b8-32cd-11e6-95f4-b82a72d5b9fb: 17
+    467bb355-32cd-11e6-95f4-b82a72d5b9fb: 18
+    467baa1c-32cd-11e6-95f4-b82a72d5b9fb: 19
+    467baa08-32cd-11e6-95f4-b82a72d5b9fb: 20
+    467babfc-32cd-11e6-95f4-b82a72d5b9fb: 21
+    467badd9-32cd-11e6-95f4-b82a72d5b9fb: 22
+    467bb0a0-32cd-11e6-95f4-b82a72d5b9fb: 23
+    467bb14e-32cd-11e6-95f4-b82a72d5b9fb: 24
+    467ba9f3-32cd-11e6-95f4-b82a72d5b9fb: 25
+    467bae5b-32cd-11e6-95f4-b82a72d5b9fb: 26
+    467baec0-32cd-11e6-95f4-b82a72d5b9fb: 27
+    467baa30-32cd-11e6-95f4-b82a72d5b9fb: 28
+    467bae47-32cd-11e6-95f4-b82a72d5b9fb: 29
+    5015da47-aa23-11e8-bbc9-44a8420c5800: 30
+    467babdb-32cd-11e6-95f4-b82a72d5b9fb: 31
+    467baca5-32cd-11e6-95f4-b82a72d5b9fb: 32
+    467bb0fd-32cd-11e6-95f4-b82a72d5b9fb: 33
+    467bb372-32cd-11e6-95f4-b82a72d5b9fb: 34
+    5014f131-aa23-11e8-bbc9-44a8420c5800: 35
+    467ba96d-32cd-11e6-95f4-b82a72d5b9fb: 36
+    467baf04-32cd-11e6-95f4-b82a72d5b9fb: 37
+    5047a0c7-aa23-11e8-bbc9-44a8420c5800: 38
+    467babd0-32cd-11e6-95f4-b82a72d5b9fb: 39
+    467bae6f-32cd-11e6-95f4-b82a72d5b9fb: 40
+    467baed4-32cd-11e6-95f4-b82a72d5b9fb: 41
+    467bb08d-32cd-11e6-95f4-b82a72d5b9fb: 42
+    467ba978-32cd-11e6-95f4-b82a72d5b9fb: 43
+    467ba962-32cd-11e6-95f4-b82a72d5b9fb: 44
+    467bb0bd-32cd-11e6-95f4-b82a72d5b9fb: 45
+    467baaa9-32cd-11e6-95f4-b82a72d5b9fb: 46
+    467ba92d-32cd-11e6-95f4-b82a72d5b9fb: 47
+    467baf42-32cd-11e6-95f4-b82a72d5b9fb: 48
+    467bb0a9-32cd-11e6-95f4-b82a72d5b9fb: 49
+    467bb21f-32cd-11e6-95f4-b82a72d5b9fb: 50
+    467bac73-32cd-11e6-95f4-b82a72d5b9fb: 51
+    467bb082-32cd-11e6-95f4-b82a72d5b9fb: 52
+    467bb2cd-32cd-11e6-95f4-b82a72d5b9fb: 53
+    467baab2-32cd-11e6-95f4-b82a72d5b9fb: 54
+    467bacb9-32cd-11e6-95f4-b82a72d5b9fb: 55
+    467ba9e6-32cd-11e6-95f4-b82a72d5b9fb: 56
+    467bac92-32cd-11e6-95f4-b82a72d5b9fb: 57
+    467bafda-32cd-11e6-95f4-b82a72d5b9fb: 58
+    467bab4a-32cd-11e6-95f4-b82a72d5b9fb: 59
+    50203d1c-aa23-11e8-bbc9-44a8420c5800: 60
+    50369310-aa23-11e8-bbc9-44a8420c5800: 61
+    467ba957-32cd-11e6-95f4-b82a72d5b9fb: 62
+    467bab55-32cd-11e6-95f4-b82a72d5b9fb: 63
+    467bb233-32cd-11e6-95f4-b82a72d5b9fb: 64
+    467baef1-32cd-11e6-95f4-b82a72d5b9fb: 65
+    467baf56-32cd-11e6-95f4-b82a72d5b9fb: 66
+    467bb077-32cd-11e6-95f4-b82a72d5b9fb: 67
+    467baa96-32cd-11e6-95f4-b82a72d5b9fb: 68
+    467bab3f-32cd-11e6-95f4-b82a72d5b9fb: 69
+    467bae78-32cd-11e6-95f4-b82a72d5b9fb: 70
+    467baa80-32cd-11e6-95f4-b82a72d5b9fb: 71
+    467bafcf-32cd-11e6-95f4-b82a72d5b9fb: 72
+    13bf6185-dd37-11e8-bbc9-44a8420c5800: 73
+    467bb23c-32cd-11e6-95f4-b82a72d5b9fb: 74
+    467bab5e-32cd-11e6-95f4-b82a72d5b9fb: 75
+    467baefa-32cd-11e6-95f4-b82a72d5b9fb: 76
+    467bb2d6-32cd-11e6-95f4-b82a72d5b9fb: 77
+    467bb2ea-32cd-11e6-95f4-b82a72d5b9fb: 78
+    467bab34-32cd-11e6-95f4-b82a72d5b9fb: 79
+    467baa9f-32cd-11e6-95f4-b82a72d5b9fb: 80
+    467bab69-32cd-11e6-95f4-b82a72d5b9fb: 81
+    467bad0f-32cd-11e6-95f4-b82a72d5b9fb: 82
+    467badbd-32cd-11e6-95f4-b82a72d5b9fb: 83
+    467bb00b-32cd-11e6-95f4-b82a72d5b9fb: 84
+    467bb1cc-32cd-11e6-95f4-b82a72d5b9fb: 85
+    50466d65-aa23-11e8-bbc9-44a8420c5800: 86
+    467bb250-32cd-11e6-95f4-b82a72d5b9fb: 87
+    467baf73-32cd-11e6-95f4-b82a72d5b9fb: 88
+    e7983a66-dc6d-11e8-bbc9-44a8420c5800: 89
+    467bb1a2-32cd-11e6-95f4-b82a72d5b9fb: 90
+    467badb2-32cd-11e6-95f4-b82a72d5b9fb: 91
+    467bb1c1-32cd-11e6-95f4-b82a72d5b9fb: 92
+    467bb113-32cd-11e6-95f4-b82a72d5b9fb: 93
+    467bac10-32cd-11e6-95f4-b82a72d5b9fb: 94
+    083e1c79-2353-11ea-bbc9-44a8420c5800: 95
+    467bad23-32cd-11e6-95f4-b82a72d5b9fb: 96
+    467bb2f3-32cd-11e6-95f4-b82a72d5b9fb: 97
+    467baff7-32cd-11e6-95f4-b82a72d5b9fb: 98
+    467bb1e0-32cd-11e6-95f4-b82a72d5b9fb: 99
+    5034fb21-aa23-11e8-bbc9-44a8420c5800: 100
+    138ee46d-dd37-11e8-bbc9-44a8420c5800: 101
+    467baf7c-32cd-11e6-95f4-b82a72d5b9fb: 102
+    13b0e3c1-dd37-11e8-bbc9-44a8420c5800: 103
+    821aeba5-aaec-11e8-bbc9-44a8420c5800: 104
+    467bb108-32cd-11e6-95f4-b82a72d5b9fb: 105
+    467bac05-32cd-11e6-95f4-b82a72d5b9fb: 106
+    467badc6-32cd-11e6-95f4-b82a72d5b9fb: 107
+    467bb1b6-32cd-11e6-95f4-b82a72d5b9fb: 108
+    467bb2fc-32cd-11e6-95f4-b82a72d5b9fb: 109
+    5017ad86-aa23-11e8-bbc9-44a8420c5800: 110
+    467baf90-32cd-11e6-95f4-b82a72d5b9fb: 111
+    467bb014-32cd-11e6-95f4-b82a72d5b9fb: 112
+    467bad37-32cd-11e6-95f4-b82a72d5b9fb: 113
+    467bb127-32cd-11e6-95f4-b82a72d5b9fb: 114
+    50277ee4-aa23-11e8-bbc9-44a8420c5800: 115
+    50304f2d-aa23-11e8-bbc9-44a8420c5800: 116
+    467bb259-32cd-11e6-95f4-b82a72d5b9fb: 117
+    467bad40-32cd-11e6-95f4-b82a72d5b9fb: 118
+    467bad94-32cd-11e6-95f4-b82a72d5b9fb: 119
+    467baa12-32cd-11e6-95f4-b82a72d5b9fb: 120
+    1391b754-dd37-11e8-bbc9-44a8420c5800: 121
+    467bae3d-32cd-11e6-95f4-b82a72d5b9fb: 122
+    467bb35f-32cd-11e6-95f4-b82a72d5b9fb: 123
+    467babf2-32cd-11e6-95f4-b82a72d5b9fb: 124
+    5043226e-aa23-11e8-bbc9-44a8420c5800: 125
+    467ba89b-32cd-11e6-95f4-b82a72d5b9fb: 126
+    467bb144-32cd-11e6-95f4-b82a72d5b9fb: 127
+    467ba83c-32cd-11e6-95f4-b82a72d5b9fb: 128
+    467bae51-32cd-11e6-95f4-b82a72d5b9fb: 129
+    467baeca-32cd-11e6-95f4-b82a72d5b9fb: 130
+    467bb198-32cd-11e6-95f4-b82a72d5b9fb: 131
+    467ba9fd-32cd-11e6-95f4-b82a72d5b9fb: 132
+    467baa3a-32cd-11e6-95f4-b82a72d5b9fb: 133
+    467baeb6-32cd-11e6-95f4-b82a72d5b9fb: 134
+    467bb33e-32cd-11e6-95f4-b82a72d5b9fb: 135
+    467baa26-32cd-11e6-95f4-b82a72d5b9fb: 136
+    467babe7-32cd-11e6-95f4-b82a72d5b9fb: 137
+    467baad4-32cd-11e6-95f4-b82a72d5b9fb: 138
+    467bae27-32cd-11e6-95f4-b82a72d5b9fb: 139
+    467ba98d-32cd-11e6-95f4-b82a72d5b9fb: 140
+    467bacaf-32cd-11e6-95f4-b82a72d5b9fb: 141
+    467bb349-32cd-11e6-95f4-b82a72d5b9fb: 142
+    467babbb-32cd-11e6-95f4-b82a72d5b9fb: 143
+    467bb368-32cd-11e6-95f4-b82a72d5b9fb: 144
+    467ba982-32cd-11e6-95f4-b82a72d5b9fb: 145
+    467bae65-32cd-11e6-95f4-b82a72d5b9fb: 146
+    467baac9-32cd-11e6-95f4-b82a72d5b9fb: 147
+    467baede-32cd-11e6-95f4-b82a72d5b9fb: 148
+  register_source_name: &register_source_name
+    网站: 1
+    电话: 2
+    app: 3
+    h5: 4
+    现场: 5
+    外部合作WS: 6
+    第三方: 7
+    外部导入: 8
+    其他合作: 9
+  custom_doctor_level_name: &custom_doctor_level_name
+    初级职称: 1
+    中级职称: 2
+    副高级职称: 3
+    正高级职称: 4
+  custom_hosp_level_name: &custom_hosp_level_name
+    一级: 1
+    二级: 2
+    三级非甲等: 3
+    三级甲等: 4
+  expert_title_name: &expert_title_name
+   一级心理咨询师: 1
+   一级营养师: 2
+   三级心理咨询师: 3
+   三级心理治疗师: 4
+   三级营养师: 5
+   主任中医师: 6
+   主任医师: 7
+   主任技师: 8
+   主任护师: 9
+   主任检验师: 10
+   主任药师: 11
+   主治中医师: 12
+   主治医师: 13
+   主管技师: 14
+   主管护师: 15
+   主管检验师: 16
+   主管药师: 17
+   二级心理咨询师: 18
+   二级心理治疗师: 19
+   二级营养师: 20
+   住院医师: 21
+   健康管理师: 22
+   副主任中医师: 23
+   副主任医师: 24
+   副主任技师: 25
+   副主任护师: 26
+   副主任检验师: 27
+   副主任药师: 28
+   助产士: 29
+   助理医师: 30
+   医师: 31
+   四级营养师: 32
+   国家专家: 33
+   技师: 34
+   护士: 35
+   护师: 36
+   检验师: 37
+   正主任医师: 38
+   治疗师: 39
+   省级专家: 40
+   药师: 41
+  academic_title_name: &academic_title_name
+    助教: 1
+    讲师: 2
+    副教授: 3
+    教授: 4
+    副研究员: 5
+    研究员: 6
+    知名专家: 7
+
+
+feature_column:
+  d_gender_id:
+    -
+      engine: LabelEncoder
+      unknow: -99
+      encoder_table: *common_status
+
+  d_is_login_1m:
+    -
+      engine: LabelEncoder
+      unknow: -99
+      encoder_table: *common_status
+
+  d_register_source_name:
+    -
+      engine: LabelEncoder
+      unknow: -99
+      encoder_table: *register_source_name
+
+  d_favorite_department:
+    -
+      engine: MultiValueGenerator
+      sep: ","
+    -
+      engine: LabelEncoder
+      unknow: -99
+      encoder_table: *favorite_department
+
+  d_custom_doctor_level_name:
+    -
+      engine: LabelEncoder
+      unknow: -99
+      encoder_table: *custom_doctor_level_name
+
+  d_custom_hosp_level_name:
+    -
+      engine: LabelEncoder
+      unknow: -99
+      encoder_table: *custom_hosp_level_name
+
+  d_expert_title_name:
+    -
+      engine: LabelEncoder
+      unknow: -99
+      encoder_table: *expert_title_name
+
+  d_academic_title_name:
+    -
+      engine: LabelEncoder
+      unknow: -99
+      encoder_table: *academic_title_name
+
+  d_is_has_qualification_id:
+    -
+      engine: LabelEncoder
+      unknow: -99
+      encoder_table: *common_status
+
+  d_is_has_technique_id:
+    -
+      engine: LabelEncoder
+      unknow: -99
+      encoder_table: *common_status
+
+  d_is_private_doctor_id:
+    -
+      engine: LabelEncoder
+      unknow: -99
+      encoder_table: *common_status
+
+  d_is_open_gh_id:
+    -
+      engine: LabelEncoder
+      unknow: -99
+      encoder_table: *common_status
+
+  d_is_open_spwz_id:
+    -
+      engine: LabelEncoder
+      unknow: -99
+      encoder_table: *common_status
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
