@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Technologyx.cn | 机器学习之推荐系统</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="机器学习之推荐系统, FM算法，LR算法" />
+	<meta name="keywords" content="机器学习之推荐系统, FM算法，LR算法" />
+	<meta name="author" content="FREEHTML5.CO" />
+
+  <!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<!-- Google Webfonts -->
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<!-- Salvattore -->
+	<link rel="stylesheet" href="css/salvattore.css">
+	<!-- Theme Style -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+		
+	<div id="fh5co-offcanvass">
+
+		<h1 class="fh5co-logo"><a class="navbar-brand" href="recommend.html">返回主页</a></h1>
+	</div>
+	<header id="fh5co-header" role="banner">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					
+					<a class="navbar-brand" href="recommend.html">返回主页</a>		
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- END .header -->
+	
+	
+	<div id="fh5co-main">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2">
+					<h2 id = "movie_name"></h2>
+					<div class="fh5co-spacer fh5co-spacer-sm"></div>
+					<p>
+					<img id="movie_img"  src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1546763410151&di=9d5c351c32ff4fbdc51847c2e3b01279&imgtype=0&src=http%3A%2F%2F58pic.ooopic.com%2F58pic%2F14%2F70%2F68%2F34858PIC6sf_1024.jpg" alt="Free HTML5 template by FREEHTML5.co" class="img-rounded img-responsive"></p>
+
+					导演：<p id = "movie_director" style="display:inline;" ></p><br/>
+					主演：<p id = "movie_actors" style="display:inline;"></p><br/>
+					类型：<p id = "movie_type" style="display:inline;"></p><br/>
+					评分：<p id = "movie_rat" style="display:inline;"></p><br/>
+					国家/地区：<p id = "movie_region" style="display:inline;"></p><br/>
+					详情：<p id = "movie_description" style="display:inline;"></p><br/>
+					
+					
+					<div id="write_comment_button_div" class="row">
+						<div class="form-group" onclick="javascript:writeComment()" style="text-align: center;">
+							<input type="button" class="btn btn-block" value="写评论">
+						</div>
+		        	</div>
+		        	<div id="write_comment_div" style="display: none;" class="row">
+						<div class="col-md-12">
+		
+							打分：	
+				
+							<label><input type="radio" value="1" 
+							name="write_comment_rating" >1分</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							
+							<label><input type="radio" value="2" 
+							name="write_comment_rating" >2分</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							
+							<label><input type="radio" value="3" 
+							name="write_comment_rating" >3分</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							
+							<label><input type="radio" value="4" 
+							name="write_comment_rating" >4分</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							
+							<label><input type="radio" value="5" 
+							name="write_comment_rating" >5分</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							
+						</div>
+						<div class="col-md-12">
+							<div class="form-group">
+								<textarea name="message" id="write_comment_comment" cols="30" class="form-control" rows="10" placeholder="这里写评论。。。"></textarea>
+							</div>
+						</div>
+						<div class="col-md-4 col-md-offset-8">
+							<div class="form-group" onclick="javascript:commitComment()" style="text-align: center;">
+								<input type="button" class="btn btn-block" value="提交">
+							</div>
+						</div>
+		        	</div>
+				</div>
+        	</div>
+        	<div class="row">
+				<div class="col-md-8 col-md-offset-2">
+					<div class="row">电影评论.....</div>
+					<hr/>
+					<div id="comment">
+						
+					</div>
+					<div id="more_comment_button" class="row">
+						<div class="form-group" onclick="javascript:loadComment()" style="text-align: left;">
+							<input type="button" class="btn btn-link" value="更多评论">
+						</div>
+					</div>
+					<div id="no_more_comment" style="display: none;" class="row">
+						没有更多评论了
+					</div>
+				</div>	
+        	</div>
+       </div>
+	</div>
+
+	<footer id="fh5co-footer">
+		
+		<div class="container">
+			<div class="row row-padded">
+				<div class="col-md-12 text-center">
+					<p class="fh5co-social-icons">
+						<a href="#"><i class="icon-twitter"></i></a>
+						<a href="#"><i class="icon-facebook"></i></a>
+						<a href="#"><i class="icon-instagram"></i></a>
+						<a href="#"><i class="icon-dribbble"></i></a>
+						<a href="#"><i class="icon-youtube"></i></a>
+					</p>
+					<p><small>&copy; Technologyx.cn. All Rights Reserved. </p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Magnific Popup -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<!-- Salvattore -->
+	<script src="js/salvattore.min.js"></script>
+	<!-- Main JS -->
+	<script src="js/main.js"></script>
+
+	<script src="js/oneMovie.js"></script>
+
+	
+	</body>
+</html>

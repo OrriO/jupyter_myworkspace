@@ -1,0 +1,14 @@
+https://github.com/ChenglongChen/tensorflow-DeepFM
+https://github.com/neal668/LightGBM-GBDT-LR/blob/master/GBFT%2BLR_simple.py
+https://github.com/andyxzq/gbdt_lr_in_recsys/blob/master/xgboost_gbdt_lr_utils.py
+https://github.com/wangru8080/gbdt-lr  #python
+
+https://github.com/wzhe06/CTRmodel #ctr model Spark
+https://github.com/shenweichen/ctrip14 #python
+https://github.com/SandraShu/IJCAI-2018-Ctr  #python 阿里妈妈
+https://github.com/HanXiaoyang/CTR_NN 深度学习CTR
+https://github.com/chengstone/kaggle_criteo_ctr_challenge-  #criteo
+https://github.com/shenweichen/DeepCTR   #keras tensorflow
+https://github.com/wnzhang/deep-ctr  #fm 模型
+https://github.com/Johnson0722/CTR_Prediction   #fm ffm
+https://github.com/nzc/dnn_ctr

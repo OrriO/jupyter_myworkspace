@@ -1,0 +1,97 @@
+业务需求分析
+业务数据做对应分析(age\MonthlySalary)
+	数值型num
+	有序性ord
+	类别型type----编码(label encoder one encoder)
+数据特征可视化分析
+	采用基于matplotlib的Seaborn库
+	pip install seaborn 安装 如果使用Anaocnda无需安装
+特征处理：选取特征(选择3个具有代表性的类别型特征)---依据数据分析的结果
+对业务进行建模：
+	机器学习--分类任务---集成学习：随机森林 LR(逻辑斯特回归)
+	校验模型：混淆矩阵（分对或分错）、准确率
+正负样本比例失衡？---如何处理？
+	欠采样:随机丢弃一些样本数据
+	过采样：类别值数据较少的部分重复采样(补充了更多数据)
+python提供了一个框架？
+	imbalance 0.3.2
+	
+#重采样后的结果
+RandomForest 
+[[  9  27]
+ [ 10 175]]
+RandomForest 0.83257918552
+LR: 
+[[ 28   8]
+ [ 55 130]]
+LR: 0.714932126697
+
+
+#没有采样后的结果（样本不均衡的情况）
+RandomForest 
+[[  8  28]
+ [  4 181]]
+RandomForest 0.85520361991
+LR: 
+[[ 13  23]
+ [ 10 175]]
+LR: 0.850678733032
+
+
+========================================
+# Attrition                   1100 non-null int64
+# Age                         1100 non-null int64
+# BusinessTravel              1100 non-null object
+# Department                  1100 non-null object
+# DistanceFromHome            1100 non-null int64
+# Education                   1100 non-null int64
+# EducationField              1100 non-null object
+# EmployeeNumber              1100 non-null int64
+# EnvironmentSatisfaction     1100 non-null int64
+# Gender                      1100 non-null object
+# JobInvolvement              1100 non-null int64
+# JobLevel                    1100 non-null int64
+# JobRole                     1100 non-null object
+# JobSatisfaction             1100 non-null int64
+# MaritalStatus               1100 non-null object
+# MonthlyIncome               1100 non-null int64
+# NumCompaniesWorked          1100 non-null int64
+# Over18                      1100 non-null object
+# OverTime                    1100 non-null object
+# PercentSalaryHike           1100 non-null int64
+# PerformanceRating           1100 non-null int64
+# RelationshipSatisfaction    1100 non-null int64
+# StandardHours               1100 non-null int64
+# StockOptionLevel            1100 non-null int64
+# TotalWorkingYears           1100 non-null int64
+# TrainingTimesLastYear       1100 non-null int64
+# WorkLifeBalance             1100 non-null int64
+# YearsAtCompany              1100 non-null int64
+# YearsInCurrentRole          1100 non-null int64
+# YearsSinceLastPromotion     1100 non-null int64
+# YearsWithCurrManager        1100 non-null int64
+	
+# Index(['Attrition', 'Age', 'BusinessTravel', 'Department', 'DistanceFromHome',
+#        'Education', 'EducationField', 'EmployeeNumber',
+#        'EnvironmentSatisfaction', 'Gender', 'JobInvolvement', 'JobLevel',
+#        'JobRole', 'JobSatisfaction', 'MaritalStatus', 'MonthlyIncome',
+#        'NumCompaniesWorked', 'Over18', 'OverTime', 'PercentSalaryHike',
+#        'PerformanceRating', 'RelationshipSatisfaction', 'StandardHours',
+#        'StockOptionLevel', 'TotalWorkingYears', 'TrainingTimesLastYear',
+#        'WorkLifeBalance', 'YearsAtCompany', 'YearsInCurrentRole',
+#        'YearsSinceLastPromotion', 'YearsWithCurrManager'],
+#       dtype='object')
+
+
+类别标签：Attrition 0 1-1表示已经离职，0表示未离职，这是目标预测值
+数值型数据：Age、MonthlyIncome、NumCompaniesWorked、PercentSalaryHike、StandardHours、TotalWorkingYears、YearsAtCompany、YearsInCurrentRole、YearsSinceLastPromotion、YearsWithCurrManager
+类别型数据：BusinessTravel、Department、EducationField、Gender、JobRole、MaritalStatus、Over18、OverTime
+有序数据：DistanceFromHome、Education、EnvironmentSatisfaction、JobInvolvement、JobLevel、JobSatisfaction、RelationshipSatisfaction、StockOptionLevel、TrainingTimesLastYear、WorkLifeBalance、
+# MaritalStatus               1100 non-null object
+# BusinessTravel              1100 non-null object
+# Department                  1100 non-null object
+# EducationField              1100 non-null object
+# Gender                      1100 non-null object
+# JobRole                     1100 non-null object
+# Over18                      1100 non-null object
+# OverTime                    1100 non-null object
