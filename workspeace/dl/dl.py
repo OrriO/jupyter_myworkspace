@@ -7,4 +7,3 @@ import tensorflow_datasets as tfds
     split = (tfds.Split.TRAIN, tfds.Split.TEST),
     with_info=True, as_supervised=True)
 
-
